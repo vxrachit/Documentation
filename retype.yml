@@ -1,0 +1,59 @@
+# Paths
+input: .
+output: .retype
+url: https://docs.vxrachit.dpdns.org
+
+# Branding
+favicon: "/public/@vxrachit.ico"
+branding:
+  title: vxRachit
+  label: Docs
+  logo: "/public/@vxrachit.png"
+  logoDark: "/public/@vxrachit.png"
+  favicon: "/public/vxrachit.ico"
+
+
+# Search
+search:
+  mode: full
+  minChars: 2
+  maxResults: 20
+  placeholder: "Search docs..."
+
+# Markdown options
+markdown:
+  mermaid: true
+
+# Themes
+theme:
+  light: lumen
+  dark: carbon
+defaultTheme: auto
+
+# Metadata
+meta:
+  title: " Rachit Verma | vxRachit Project Documentation"
+  description: "Technical docs, guides, and research by vxRachit"
+
+# Footer
+footer:
+  copyright: "&copy; {{ year }} vxRachit. All rights reserved."
+  links:
+    - text: GitHub
+      link: https://github.com/vxrachit
+    - text: LinkedIn
+      link: https://linkedin.com/in/vxrachit
+    - text: Portfolio
+      link: https://vxrachit.dpdns.org
+
+# External links open in a new tab
+outbound:
+  newWindow: true
+
+# Misc
+poweredByRetype: true
+
+# Ignore files from build
+exclude:
+  - "README.md"
+  - "CODE_OF_CONDUCT.md"
