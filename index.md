@@ -30,9 +30,9 @@ Here you’ll find blueprints, deep dives, and reflections on everything I build
 - Frameworks : React, FastAPI, Tailwind CSS, PyQt6  
 - DevOps & Cloud : Supabase, Cloudflare Pages, GitHub Actions
 +++ :icon-mortar-board: Learning Journey
-Focused on conversational AI, NLP pipelines, and friction-less developer tooling.
+Dedicated to building intelligent UIs, full-stack systems, and real-time AI integrations using modern web and Python tools.
 +++ :icon-heart: Hobbies
-Outside code: gaming, tech journalism, and exploring new frameworks.
+Beyond programming: I enjoy gaming, diving into tech news, experimenting with UI/UX tools, and exploring emerging dev frameworks. 
 +++
 
 ---
