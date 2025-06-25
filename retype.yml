@@ -4,12 +4,12 @@ output: .retype
 url: https://docs.vxrachit.dpdns.org
 
 # Branding
-favicon: "/public/@vxrachit.ico"
+favicon: "/public/vxrachit.ico"
 branding:
   title: vxRachit
   label: Docs
-  logo: "/public/@vxrachit.png"
-  logoDark: "/public/@vxrachit.png"
+  logo: "/public/vxrachit.png"
+  logoDark: "/public/vxrachit.png"
   favicon: "/public/vxrachit.ico"
 
 
