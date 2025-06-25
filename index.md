@@ -40,17 +40,21 @@ Beyond programming: I enjoy gaming, diving into tech news, experimenting with UI
 ## :icon-rocket: Project Spotlight
 
 ||| :icon-file: [Scroll2PDF](Scroll2PDF.md)  
-Scrolls through an entire webpage, captures every frame, and exports a clean multi-page PDF. _Python · PyQt6 · Pillow_
-|||
+Scrolls through an entire webpage, captures every frame, and exports a clean multi-page PDF. _Python · PyQt6 · Pillow_  
+|||  
 ||| :icon-book: [Madhavam Classes](MadhavamClasses.md)  
-Role-based LMS with Supabase auth, real-time updates, and interactive dashboards. _React · FastAPI · Supabase_
-|||
+Role-based LMS with Supabase auth, real-time updates, and interactive dashboards. _React · FastAPI · Supabase_  
+|||  
 ||| :icon-comment-discussion: [RVITS AI](RVITS.md)  
-Gemini-powered chatbot sporting multi-session memory, animated streaming replies, and dark-mode toggle. _React · FastAPI · Gemini AI_
-|||
+Gemini-powered chatbot sporting multi-session memory, animated streaming replies, and dark-mode toggle. _React · FastAPI · Gemini AI_  
+|||  
 ||| :icon-terminal: [GLA University Portal](GLAPortal.md)  
-End-to-end academic suite—ID cards, leave workflows, and automated docs. _React · FastAPI · MySQL_
+End-to-end academic suite—ID cards, leave workflows, and automated docs. _React · FastAPI · MySQL_  
+|||  
+||| :icon-graph: [FarmFlux](FarmFlux.md)  
+AI-driven crop-advisory dashboard with disease detection, weather insights, and Supabase-backed auth. _React · FastAPI · Supabase · Gemini AI_  
 |||
+
 
 ---
 
