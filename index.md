@@ -64,8 +64,8 @@ AI-driven crop-advisory dashboard with disease detection, weather insights, and 
 | -------- | ------ |
 | GitHub   | **[@vxrachit](https://github.com/vxrachit)** |
 | LinkedIn | **[vxrachit](https://linkedin.com/in/vxrachit)** |
-| Portfolio| **[vxrachit.dpdns.org](https://vxrachit.dpdns.org)** |
-| Email    | **[mail@vxrachit.dpdns.org](mailto:mail@vxrachit.dpdns.org)** |
+| Portfolio| **[vxrachit.is-a.dev](https://vxrachit.is-a.dev)** |
+| Email    | **[mail@vxrachit.is-a.dev](mailto:mail@vxrachit.is-a.dev)** |
 
 ---
 
