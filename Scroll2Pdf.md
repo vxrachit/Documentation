@@ -2,7 +2,7 @@
 label: Scroll2PDF
 icon: file
 description: "Auto-Scrolling Webpage Capture to PDF with PyQt6"
-order: 97
+order: 98
 tags: [Python, PyQt6, Screenshot, PDF]
 ---
 
