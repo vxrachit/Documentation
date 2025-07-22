@@ -11,7 +11,7 @@ tags: [React, Vite, Groq, LLaMA3, Cloudflare-Workers, TypeScript]
 ![](https://img.shields.io/badge/React-18-blue?logo=react)
 ![](https://img.shields.io/badge/Vite-5.x-blueviolet?logo=vite)
 ![](https://img.shields.io/badge/TypeScript-5.x-informational?logo=typescript)
-![](https://img.shields.io/badge/Groq-LLM-70B-critical?logo=openai)
+![](https://img.shields.io/badge/Groq-LLM_70B-critical)
 ![](https://img.shields.io/badge/Cloudflare-Workers-orange?logo=cloudflare)
 
 > **Resume Analyzer AI** uses the blazing-fast **LLaMA3-70B model via Groq API** to evaluate how well a resume aligns with a job description — showing strengths, weaknesses, and a smart match score. Serverless and modern, it's built with **Cloudflare Workers** and **React + Vite**.
