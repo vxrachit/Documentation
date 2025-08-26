@@ -1,3 +1,11 @@
+---
+label: ResumeFlow
+icon: book
+description: "ResumeFlow hepls job seekers generate tailored resumes and cover letters instantly with the power of AI. "
+order: 95
+tags: [FastAPI, Supabase, React, Gemini]
+---
+
 # 📄 ResumeFlow  
 **AI-Powered Resume & Cover Letter Generator**  
 
