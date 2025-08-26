@@ -190,4 +190,4 @@ If you like this project:
 ---
 
 ### 📌 License
-This project is licensed under the [Resume Flow Custom License](./LICENSE).
+This project is licensed under the [Resume Flow Custom License](https://github.com/vxrachit/Resume-Flow-AI-Resume-Generator/blob/main/LICENSE).
