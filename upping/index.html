@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.816506078100">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.11.0">
+
+    <!-- Primary Meta Tags -->
+    <title>UpPing Documentation Rachit Verma | vxRachit Project Documentation</title>
+    <meta name="title" content="UpPing Documentation Rachit Verma | vxRachit Project Documentation">
+    <meta name="description" content="A fast, modern website uptime and performance monitoring tool built with React, TypeScript, and Cloudflare Workers.">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://docs.vxrachit.dpdns.org/upping/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://docs.vxrachit.dpdns.org/upping/">
+    <meta property="og:title" content="UpPing Documentation Rachit Verma | vxRachit Project Documentation">
+    <meta property="og:description" content="A fast, modern website uptime and performance monitoring tool built with React, TypeScript, and Cloudflare Workers.">
+    <meta property="og:image" content="https://img.shields.io/badge/deploy-cloudflare-orange">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://docs.vxrachit.dpdns.org/upping/">
+    <meta property="twitter:title" content="UpPing Documentation Rachit Verma | vxRachit Project Documentation">
+    <meta property="twitter:description" content="A fast, modern website uptime and performance monitoring tool built with React, TypeScript, and Cloudflare Workers.">
+    <meta property="twitter:image" content="https://img.shields.io/badge/deploy-cloudflare-orange">
+
+    <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
+
+    <link href="../public/vxrachit.ico" rel="icon">
+    <link href="../resources/css/retype.css?v=3.11.0.816506078100" rel="stylesheet">
+
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.11.0.816506078100" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.11.0.816506078100" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../resources/js/prism.js?v=3.11.0.816506078100" defer></script>
+</head>
+<body>
+    <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
+        <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
+    
+        <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="retype-sidebar-left-toggle-button"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="retype-branding-logo" href="../" class="flex items-center leading-snug text-2xl">
+                            <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../public/vxrachit.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../public/vxrachit.png">
+                            </span>
+                            <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">vxRachit</span>
+                        </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav id="retype-header-nav" class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+                            <input class="w-full h-10 placeholder-search-placeholder transition-colors duration-200 ease-in bg-search-bg border border-transparent rounded md:text-sm hover:border-search-border-hover focus:outline-none focus:border-search-border-focus" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search docs...">
+                        </div>
+        
+                        <!-- Mobile search button -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placeholder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="retype-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+    
+        <div id="retype-container" class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+            
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded shadow-none text-sm focus:outline-none focus:border-filter-border-focus" type="text" placeholder="Filter">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-base-border">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-base-border">
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 bg-body-bg">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="retype-markdown" id="retype-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="retype-sidebar-right-toggle"></div>
+                                <!-- Page content  -->
+<doc-anchor-target id="upping-documentation" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#upping-documentation">#</doc-anchor-trigger>
+        <span>UpPing Documentation</span>
+    </h1>
+</doc-anchor-target>
+<blockquote>
+<p>A fast, modern website uptime and performance monitoring tool built with React, TypeScript, and Cloudflare Workers.</p>
+</blockquote>
+<p><figure class="content-center">
+    <a href="https://upping.vxcloud.workers.dev/">
+        <img src="https://img.shields.io/badge/deploy-cloudflare-orange" alt="Deploy Status" class="rounded-image-rounded border-image-border border-image-border-width" />
+    </a>
+    <figcaption class="caption">Deploy Status</figcaption>
+</figure>
+<figure class="content-center">
+    <a href="https://reactjs.org/">
+        <img src="https://img.shields.io/badge/frontend-react-blue" alt="Frontend" class="rounded-image-rounded border-image-border border-image-border-width" />
+    </a>
+    <figcaption class="caption">Frontend</figcaption>
+</figure>
+<figure class="content-center">
+    <a href="https://workers.cloudflare.com/">
+        <img src="https://img.shields.io/badge/api-cloudflare%20workers-orange" alt="API" class="rounded-image-rounded border-image-border border-image-border-width" />
+    </a>
+    <figcaption class="caption">API</figcaption>
+</figure>
+<figure class="content-center">
+    <a href="https://www.typescriptlang.com/">
+        <img src="https://img.shields.io/badge/typescript-ready-blue" alt="TypeScript" class="rounded-image-rounded border-image-border border-image-border-width" />
+    </a>
+    <figcaption class="caption">TypeScript</figcaption>
+</figure>
+</p>
+<hr>
+<doc-anchor-target id="overview">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#overview">#</doc-anchor-trigger>
+        <span>Overview</span>
+    </h2>
+</doc-anchor-target>
+<p>UpPing is a comprehensive website monitoring solution that provides real-time uptime checks, performance metrics, SSL validation, and detailed error diagnostics. Built with modern web technologies and powered by Cloudflare&#x27;s edge network for lightning-fast global performance.</p>
+<doc-anchor-target id="key-features">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#key-features">#</doc-anchor-trigger>
+        <span>Key Features</span>
+    </h3>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="real-time-monitoring">
+<template #title>Real-time Monitoring</template>
+<p>Check any website&#x27;s uptime and performance instantly with sub-second response times powered by Cloudflare Workers edge computing.</p>
+</doc-tab>
+<doc-tab v-cloak id="performance-metrics">
+<template #title>Performance Metrics</template>
+<p>Get detailed insights including:</p>
+<ul>
+<li>Response Time</li>
+<li>Time to First Byte (TTFB)</li>
+<li>SSL Certificate Status</li>
+<li>Health Score (0-100)</li>
+<li>Content Type Detection</li>
+</ul>
+</doc-tab>
+<doc-tab v-cloak id="smart-classification">
+<template #title>Smart Classification</template>
+<p>Automatic categorization of issues:</p>
+<ul>
+<li>DNS Resolution Problems</li>
+<li>SSL/TLS Certificate Issues</li>
+<li>Server Errors (5xx)</li>
+<li>Client Errors (4xx)</li>
+<li>Network Timeouts</li>
+<li>Invalid Domains</li>
+</ul>
+</doc-tab>
+<doc-tab v-cloak id="redirect-tracking">
+<template #title>Redirect Tracking</template>
+<p>Full redirect chain analysis with hop-by-hop information showing the complete path from requested URL to final destination.</p>
+</doc-tab>
+</doc-tabs>
+<hr>
+<doc-anchor-target id="architecture">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#architecture">#</doc-anchor-trigger>
+        <span>Architecture</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">┌─────────────────┐    HTTP/HTTPS    ┌─────────────────┐
+│                 │    ────────►     │                 │
+│   Frontend      │                  │   Cloudflare    │
+│   (React/Vite)  │    ◄────────     │   Workers API   │
+│                 │      JSON        │                 │
+└─────────────────┘                  └─────────────────┘</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="technology-stack">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#technology-stack">#</doc-anchor-trigger>
+        <span>Technology Stack</span>
+    </h3>
+</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="frontend">
+       <template #title>Frontend</template>
+<ul>
+<li><strong>React 18</strong> - Modern UI library with hooks</li>
+<li><strong>TypeScript</strong> - Type-safe development</li>
+<li><strong>Vite</strong> - Lightning-fast build tool</li>
+<li><strong>Tailwind CSS</strong> - Utility-first styling</li>
+<li><strong>Axios</strong> - HTTP client</li>
+<li><strong>Lucide React</strong> - Icon library</li>
+</ul>
+   </doc-panel>
+   <doc-panel id="api">
+       <template #title>API</template>
+<ul>
+<li><strong>Cloudflare Workers</strong> - Edge computing platform</li>
+<li><strong>Wrangler</strong> - CLI and development tool</li>
+<li><strong>Vitest</strong> - Testing framework</li>
+</ul>
+   </doc-panel>
+</doc-panels>
+<hr>
+<doc-anchor-target id="getting-started">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#getting-started">#</doc-anchor-trigger>
+        <span>Getting Started</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="prerequisites">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#prerequisites">#</doc-anchor-trigger>
+        <span>Prerequisites</span>
+    </h3>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>warning System Requirements</h5>
+<ul>
+<li>Node.js v18 or higher</li>
+<li>npm or yarn package manager</li>
+<li>Wrangler CLI (for API deployment)</li>
+</ul>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="installation">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installation">#</doc-anchor-trigger>
+        <span>Installation</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="1-clone-repository">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#1-clone-repository">#</doc-anchor-trigger>
+        <span>1. Clone Repository</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">git clone https://github.com/vxrachit/UpPing.git
+cd UpPing</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="2-frontend-setup">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#2-frontend-setup">#</doc-anchor-trigger>
+        <span>2. Frontend Setup</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">cd frontend
+npm install</code></pre>
+</doc-codeblock></div>
+<p>Create <code v-pre>.env</code> file:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">VITE_API_BASE_URL=https://your-worker-domain.workers.dev/</code></pre>
+</doc-codeblock></div>
+<p>Start development server:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">npm run dev</code></pre>
+</doc-codeblock></div>
+<p>Frontend available at: <code v-pre>http://localhost:5173</code></p>
+<doc-anchor-target id="3-api-setup">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#3-api-setup">#</doc-anchor-trigger>
+        <span>3. API Setup</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">cd api
+npm install</code></pre>
+</doc-codeblock></div>
+<p>Start local development:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">npm run dev</code></pre>
+</doc-codeblock></div>
+<p>API available at: <code v-pre>http://localhost:8787</code></p>
+<hr>
+<doc-anchor-target id="project-structure">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#project-structure">#</doc-anchor-trigger>
+        <span>Project Structure</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">UpPing/
+├── frontend/              # React frontend application
+│   ├── src/
+│   │   ├── components/    # Reusable UI components
+│   │   │   ├── Header.tsx          # Navigation header
+│   │   │   ├── Footer.tsx          # Footer with links
+│   │   │   ├── ResultCard.tsx      # Results display
+│   │   │   └── RecentChecks.tsx    # Recent checks list
+│   │   ├── hooks/         # Custom React hooks
+│   │   │   ├── useTheme.ts         # Dark/light mode
+│   │   │   ├── useLocalStorage.ts  # Local storage hook
+│   │   │   └── useScrollAnimation.ts # Scroll animations
+│   │   ├── lib/           # Utilities and API client
+│   │   │   └── api.ts              # API integration
+│   │   ├── pages/         # Page components
+│   │   │   ├── Home.tsx            # Main monitoring page
+│   │   │   ├── Health.tsx          # Backend health check
+│   │   │   └── About.tsx           # About page
+│   │   ├── App.tsx        # Root component
+│   │   ├── main.tsx       # Entry point
+│   │   └── index.css      # Global styles
+│   ├── package.json
+│   ├── vite.config.ts
+│   ├── tailwind.config.js
+│   └── tsconfig.json
+├── api/                   # Cloudflare Workers API
+│   ├── src/
+│   │   └── index.js       # Main worker script
+│   ├── package.json
+│   └── wrangler.jsonc     # Cloudflare config
+└── README.md</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="api-documentation">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#api-documentation">#</doc-anchor-trigger>
+        <span>API Documentation</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="endpoints">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#endpoints">#</doc-anchor-trigger>
+        <span>Endpoints</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="health-check">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#health-check">#</doc-anchor-trigger>
+        <span>Health Check</span>
+    </h4>
+</doc-anchor-target>
+<p>Check API status and version.</p>
+<doc-tabs>
+<doc-tab v-cloak id="request">
+<template #title>Request</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-http"><code v-pre class="language-http">GET /api/health</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="response">
+<template #title>Response</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
+  &quot;ok&quot;: true,
+  &quot;version&quot;: &quot;1.0&quot;,
+  &quot;timestamp&quot;: &quot;2025-11-15T10:30:00.000Z&quot;
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="website-check">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#website-check">#</doc-anchor-trigger>
+        <span>Website Check</span>
+    </h4>
+</doc-anchor-target>
+<p>Perform comprehensive website health check.</p>
+<doc-tabs>
+<doc-tab v-cloak id="request">
+<template #title>Request</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-http"><code v-pre class="language-http">GET /api/check?url={website}</code></pre>
+</doc-codeblock></div>
+<p><strong>Query Parameters:</strong></p>
+<ul>
+<li><code v-pre>url</code> (required) - Website URL to check (with or without protocol)</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">/api/check?url=google.com
+/api/check?url=https://example.com
+/api/check?url=github.com</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="success-response">
+<template #title>Success Response</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
+  &quot;requestedUrl&quot;: &quot;https://google.com&quot;,
+  &quot;finalUrl&quot;: &quot;https://www.google.com/&quot;,
+  &quot;redirected&quot;: true,
+  &quot;redirectCount&quot;: 1,
+  &quot;redirectChain&quot;: [
+    {
+      &quot;from&quot;: &quot;https://google.com&quot;,
+      &quot;to&quot;: &quot;https://www.google.com/&quot;,
+      &quot;code&quot;: 301
+    }
+  ],
+  &quot;statusCode&quot;: 200,
+  &quot;responseTime&quot;: 245,
+  &quot;ttfb&quot;: 180,
+  &quot;sslStatus&quot;: &quot;valid&quot;,
+  &quot;contentType&quot;: &quot;text/html; charset=utf-8&quot;,
+  &quot;responseSize&quot;: 12345,
+  &quot;classification&quot;: &quot;Success&quot;,
+  &quot;reason&quot;: &quot;ok&quot;,
+  &quot;error&quot;: null,
+  &quot;advice&quot;: null,
+  &quot;healthScore&quot;: 95,
+  &quot;cached&quot;: false,
+  &quot;checkedAt&quot;: &quot;2025-11-15T10:30:00.000Z&quot;
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="error-response">
+<template #title>Error Response</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
+  &quot;requestedUrl&quot;: &quot;https://invalid-domain-xyz.com&quot;,
+  &quot;finalUrl&quot;: &quot;https://invalid-domain-xyz.com&quot;,
+  &quot;redirected&quot;: false,
+  &quot;redirectCount&quot;: 0,
+  &quot;redirectChain&quot;: [],
+  &quot;statusCode&quot;: null,
+  &quot;responseTime&quot;: 5234,
+  &quot;ttfb&quot;: 0,
+  &quot;sslStatus&quot;: &quot;unknown&quot;,
+  &quot;contentType&quot;: null,
+  &quot;responseSize&quot;: 0,
+  &quot;classification&quot;: &quot;invalid_domain&quot;,
+  &quot;reason&quot;: &quot;invalid_domain&quot;,
+  &quot;error&quot;: &quot;Domain does not exist or cannot be resolved&quot;,
+  &quot;advice&quot;: &quot;This is not a valid website address. Please check the spelling.&quot;,
+  &quot;healthScore&quot;: 0,
+  &quot;cached&quot;: false,
+  &quot;checkedAt&quot;: &quot;2025-11-15T10:30:00.000Z&quot;
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="status-classifications">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#status-classifications">#</doc-anchor-trigger>
+        <span>Status Classifications</span>
+    </h3>
+</doc-anchor-target>
+<p>The API automatically classifies website status into the following categories:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Classification</th>
+<th>HTTP Codes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Success</strong></td>
+<td>200-299</td>
+<td>Website is healthy and responding normally</td>
+</tr>
+<tr>
+<td><strong>client_error</strong></td>
+<td>400-499</td>
+<td>Client-side errors (403, 404, etc.)</td>
+</tr>
+<tr>
+<td><strong>server_error</strong></td>
+<td>500-599</td>
+<td>Server-side errors</td>
+</tr>
+<tr>
+<td><strong>timeout</strong></td>
+<td>-</td>
+<td>Request exceeded timeout limit</td>
+</tr>
+<tr>
+<td><strong>invalid_domain</strong></td>
+<td>-</td>
+<td>DNS resolution failed or invalid domain</td>
+</tr>
+<tr>
+<td><strong>dns_error</strong></td>
+<td>-</td>
+<td>DNS lookup issues</td>
+</tr>
+<tr>
+<td><strong>ssl_error</strong></td>
+<td>-</td>
+<td>SSL/TLS certificate problems</td>
+</tr>
+<tr>
+<td><strong>network_error</strong></td>
+<td>-</td>
+<td>Network connectivity issues</td>
+</tr>
+<tr>
+<td><strong>cloudflare_internal_error</strong></td>
+<td>-</td>
+<td>Cloudflare edge connection issues</td>
+</tr>
+<tr>
+<td><strong>unknown_error</strong></td>
+<td>-</td>
+<td>Unclassified errors</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="caching-strategy">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#caching-strategy">#</doc-anchor-trigger>
+        <span>Caching Strategy</span>
+    </h3>
+</doc-anchor-target>
+<p>The API implements intelligent caching:</p>
+<ul>
+<li><strong>Cache Duration</strong>: 60 seconds</li>
+<li><strong>Cache Key</strong>: Full URL</li>
+<li><strong>Cache Storage</strong>: Cloudflare edge cache</li>
+<li><strong>Cache Indicator</strong>: <code v-pre>cached: true/false</code> in response</li>
+</ul>
+<doc-anchor-target id="error-handling">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#error-handling">#</doc-anchor-trigger>
+        <span>Error Handling</span>
+    </h3>
+</doc-anchor-target>
+<p>The API provides detailed error classification and advice:</p>
+<p><strong>Example Error Classifications:</strong></p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-success"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-success" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21 9.09c-.55 0-1 .45-1 1v.92c0 4.96-4.04 8.99-9 8.99-4.97 0-9-4.04-9-9s4.04-9 9-9c1.27 0 2.5.26 3.66.78.51.22 1.1 0 1.32-.51.23-.5 0-1.1-.51-1.32C14.06.32 12.56 0 11.01 0H11C4.94 0 0 4.93 0 10.99 0 17.06 4.93 22 10.99 22H11c6.06 0 11-4.93 11-10.99v-.92c0-.56-.45-1-1-1z"></path>
+                    <path d="M8.71 9.31a.996.996 0 10-1.41 1.41l3 3c.19.19.44.29.71.29.27 0 .52-.11.71-.29l10-10.01a.996.996 0 10-1.41-1.41L11 11.6 8.71 9.31z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Valid Domain - Slow Response</h5>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
+  &quot;classification&quot;: &quot;Success&quot;,
+  &quot;healthScore&quot;: 60,
+  &quot;advice&quot;: null,
+  &quot;responseTime&quot;: 2500
+}</code></pre>
+</doc-codeblock></div>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Timeout</h5>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
+  &quot;classification&quot;: &quot;timeout&quot;,
+  &quot;reason&quot;: &quot;timeout&quot;,
+  &quot;advice&quot;: &quot;The site took too long to respond. Possibly under heavy load.&quot;,
+  &quot;healthScore&quot;: 25
+}</code></pre>
+</doc-codeblock></div>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-danger"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-danger" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21.71 6.15L15.85.29c-.19-.18-.44-.29-.71-.29H6.86c-.27 0-.52.11-.71.29L.29 6.15c-.18.19-.29.44-.29.71v8.28c0 .27.11.52.29.71l5.86 5.86c.19.18.44.29.71.29h8.28c.27 0 .52-.11.71-.29l5.86-5.86a.99.99 0 00.29-.71V6.86c0-.27-.11-.52-.29-.71zM20 14.73L14.73 20H7.27L2 14.73V7.27L7.27 2h7.45L20 7.27v7.46z"></path>
+                    <path d="M11 12c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1zM11.01 14c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Invalid Domain</h5>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
+  &quot;classification&quot;: &quot;invalid_domain&quot;,
+  &quot;reason&quot;: &quot;invalid_domain&quot;,
+  &quot;advice&quot;: &quot;This is not a valid website address. Please check the spelling.&quot;,
+  &quot;healthScore&quot;: 0
+}</code></pre>
+</doc-codeblock></div>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="performance-features">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#performance-features">#</doc-anchor-trigger>
+        <span>Performance Features</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="request-strategy">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#request-strategy">#</doc-anchor-trigger>
+        <span>Request Strategy</span>
+    </h4>
+</doc-anchor-target>
+<p>The API uses a multi-stage request strategy:</p>
+<ol>
+<li><strong>HEAD Request</strong> - Initial attempt with minimal data transfer</li>
+<li><strong>Fallback GET Request</strong> - With Range header (0-1023 bytes) if HEAD fails</li>
+<li><strong>Redirect Following</strong> - Manual handling up to 10 redirects</li>
+<li><strong>Browser Headers</strong> - Mimics real browser behavior</li>
+</ol>
+<doc-anchor-target id="timeout-configuration">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#timeout-configuration">#</doc-anchor-trigger>
+        <span>Timeout Configuration</span>
+    </h4>
+</doc-anchor-target>
+<ul>
+<li>Default timeout: 10 seconds</li>
+<li>Configurable per request</li>
+<li>AbortController for proper cancellation</li>
+</ul>
+<hr>
+<doc-anchor-target id="development">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#development">#</doc-anchor-trigger>
+        <span>Development</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="available-scripts">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#available-scripts">#</doc-anchor-trigger>
+        <span>Available Scripts</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="frontend-scripts">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#frontend-scripts">#</doc-anchor-trigger>
+        <span>Frontend Scripts</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">npm run dev          # Start development server (localhost:5173)
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+npm run typecheck    # TypeScript type checking</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="api-scripts">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#api-scripts">#</doc-anchor-trigger>
+        <span>API Scripts</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">npm run dev          # Start local development (localhost:8787)
+npm run deploy       # Deploy to Cloudflare Workers
+npm run start        # Alias for dev
+npm test            # Run Vitest tests</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="environment-configuration">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#environment-configuration">#</doc-anchor-trigger>
+        <span>Environment Configuration</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="frontend-env">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#frontend-env">#</doc-anchor-trigger>
+        <span>Frontend (.env)</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">VITE_API_BASE_URL=https://your-api-domain.workers.dev/</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="development-workflow">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#development-workflow">#</doc-anchor-trigger>
+        <span>Development Workflow</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Local Development</strong></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash"># Terminal 1 - Start API
+cd api
+npm run dev
+
+# Terminal 2 - Start Frontend
+cd frontend
+npm run dev</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p><strong>Testing Changes</strong></p>
+<ul>
+<li>Frontend: Hot reload at <code v-pre>http://localhost:5173</code></li>
+<li>API: Available at <code v-pre>http://localhost:8787</code></li>
+</ul>
+</li>
+<li><p><strong>Type Checking</strong></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">cd frontend
+npm run typecheck</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p><strong>Linting</strong></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">cd frontend
+npm run lint</code></pre>
+</doc-codeblock></div>
+</li>
+</ol>
+<hr>
+<doc-anchor-target id="deployment">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#deployment">#</doc-anchor-trigger>
+        <span>Deployment</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="frontend-deployment">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#frontend-deployment">#</doc-anchor-trigger>
+        <span>Frontend Deployment</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="build-for-production">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#build-for-production">#</doc-anchor-trigger>
+        <span>Build for Production</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">cd frontend
+npm run build</code></pre>
+</doc-codeblock></div>
+<p>Output: <code v-pre>dist/</code> folder</p>
+<doc-anchor-target id="deployment-options">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#deployment-options">#</doc-anchor-trigger>
+        <span>Deployment Options</span>
+    </h4>
+</doc-anchor-target>
+<doc-panels>
+   <doc-panel id="cloudflare-pages">
+       <template #title>Cloudflare Pages</template>
+<ol>
+<li>Connect GitHub repository</li>
+<li>Set build command: <code v-pre>npm run build</code></li>
+<li>Set build output: <code v-pre>dist</code></li>
+</ol>
+   </doc-panel>
+   <doc-panel id="github-pages">
+       <template #title>GitHub Pages</template>
+<p>Use GitHub Actions workflow</p>
+   </doc-panel>
+</doc-panels>
+<doc-anchor-target id="api-deployment">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#api-deployment">#</doc-anchor-trigger>
+        <span>API Deployment</span>
+    </h3>
+</doc-anchor-target>
+<doc-anchor-target id="deploy-to-cloudflare-workers">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#deploy-to-cloudflare-workers">#</doc-anchor-trigger>
+        <span>Deploy to Cloudflare Workers</span>
+    </h4>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">cd api
+
+# Login (first time only)
+wrangler login
+
+# Deploy
+npm run deploy</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="post-deployment">
+    <h4>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#post-deployment">#</doc-anchor-trigger>
+        <span>Post-Deployment</span>
+    </h4>
+</doc-anchor-target>
+<ol>
+<li>Note the worker URL: <code v-pre>https://your-worker.workers.dev</code></li>
+<li>Update frontend <code v-pre>.env</code> with worker URL</li>
+<li>Rebuild and redeploy frontend</li>
+</ol>
+<hr>
+<doc-anchor-target id="testing">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#testing">#</doc-anchor-trigger>
+        <span>Testing</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="frontend-testing">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#frontend-testing">#</doc-anchor-trigger>
+        <span>Frontend Testing</span>
+    </h3>
+</doc-anchor-target>
+<p>Current setup uses TypeScript type checking:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">npm run typecheck</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="api-testing">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#api-testing">#</doc-anchor-trigger>
+        <span>API Testing</span>
+    </h3>
+</doc-anchor-target>
+<p>Using Vitest with Cloudflare Workers pool:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">cd api
+npm test</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="troubleshooting">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#troubleshooting">#</doc-anchor-trigger>
+        <span>Troubleshooting</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="common-issues">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#common-issues">#</doc-anchor-trigger>
+        <span>Common Issues</span>
+    </h3>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Frontend Not Connecting to API</h5>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Check <code v-pre>.env</code> file has correct <code v-pre>VITE_API_BASE_URL</code></li>
+<li>Ensure API is running</li>
+<li>Check browser console for CORS errors</li>
+<li>Verify API URL format (include trailing slash)</li>
+</ol>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>API Deployment Fails</h5>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Run <code v-pre>wrangler login</code> to authenticate</li>
+<li>Check <code v-pre>wrangler.jsonc</code> configuration</li>
+<li>Verify account has Workers enabled</li>
+<li>Check deployment logs: <code v-pre>wrangler tail</code></li>
+</ol>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-warning"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-warning" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M22.48 15.59L14.01 1.45A2.968 2.968 0 0012.16.09c-.78-.19-1.58-.07-2.27.35-.41.25-.76.6-1.01 1.01v.01L.4 15.6c-.83 1.43-.33 3.27 1.1 4.1.45.26.95.4 1.48.4h16.95c.8-.01 1.55-.33 2.11-.9.56-.57.87-1.33.86-2.13a3.04 3.04 0 00-.42-1.48zm-1.87 2.21c-.19.19-.44.3-.69.3H2.99c-.17 0-.34-.05-.49-.13a.992.992 0 01-.37-1.35L10.6 2.48c.08-.14.2-.25.34-.33a.992.992 0 011.37.33l8.46 14.13c.09.15.13.32.13.49 0 .26-.1.51-.29.7z"></path>
+                    <path d="M11.45 12.1c.55 0 1-.45 1-1v-4c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .56.45 1 1 1zM11.46 14.1c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Build Errors</h5>
+<p><strong>Solution:</strong></p>
+<ol>
+<li>Delete <code v-pre>node_modules</code> and reinstall</li>
+<li>Clear build cache: <code v-pre>rm -rf dist .vite</code></li>
+<li>Update dependencies: <code v-pre>npm update</code></li>
+<li>Check Node.js version (v18+)</li>
+</ol>
+        </div>
+    </div>
+</div>
+<hr>
+<doc-anchor-target id="security">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#security">#</doc-anchor-trigger>
+        <span>Security</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="frontend-security">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#frontend-security">#</doc-anchor-trigger>
+        <span>Frontend Security</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Input Validation</strong> - URL validation before API calls</li>
+<li><strong>XSS Prevention</strong> - React automatic escaping</li>
+<li><strong>HTTPS Only</strong> - Force secure connections</li>
+<li><strong>Environment Variables</strong> - Sensitive data in <code v-pre>.env</code></li>
+</ul>
+<doc-anchor-target id="api-security">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#api-security">#</doc-anchor-trigger>
+        <span>API Security</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>CORS Configuration</strong> - Controlled cross-origin access</li>
+<li><strong>Rate Limiting</strong> - Cloudflare automatic protection</li>
+<li><strong>Input Sanitization</strong> - URL validation and parsing</li>
+<li><strong>Error Handling</strong> - No sensitive data in errors</li>
+<li><strong>Timeout Protection</strong> - Prevent long-running requests</li>
+</ul>
+<doc-anchor-target id="best-practices">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#best-practices">#</doc-anchor-trigger>
+        <span>Best Practices</span>
+    </h3>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-danger"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-danger" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21.71 6.15L15.85.29c-.19-.18-.44-.29-.71-.29H6.86c-.27 0-.52.11-.71.29L.29 6.15c-.18.19-.29.44-.29.71v8.28c0 .27.11.52.29.71l5.86 5.86c.19.18.44.29.71.29h8.28c.27 0 .52-.11.71-.29l5.86-5.86a.99.99 0 00.29-.71V6.86c0-.27-.11-.52-.29-.71zM20 14.73L14.73 20H7.27L2 14.73V7.27L7.27 2h7.45L20 7.27v7.46z"></path>
+                    <path d="M11 12c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1zM11.01 14c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Never Commit</h5>
+<ul>
+<li><code v-pre>.env</code> files</li>
+<li>API keys</li>
+<li>Wrangler credentials</li>
+<li>Production URLs</li>
+</ul>
+        </div>
+    </div>
+</div>
+<hr>
+<hr>
+<doc-anchor-target id="contributing">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#contributing">#</doc-anchor-trigger>
+        <span>Contributing</span>
+    </h2>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>If you find UpPing useful, please consider:</p>
+<ul>
+<li><span class="docs-emoji">&#x2B50;</span> <strong>Starring</strong> the <a href="https://github.com/vxrachit/UpPing">GitHub repository</a></li>
+<li><span class="docs-emoji">&#x1F374;</span> <strong>Forking</strong> to create your own version</li>
+<li><span class="docs-emoji">&#x1F4E2;</span> <strong>Sharing</strong> with others who might benefit</li>
+</ul>
+        </div>
+    </div>
+</div>
+<doc-anchor-target id="development-setup">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#development-setup">#</doc-anchor-trigger>
+        <span>Development Setup</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><strong>Fork the repository</strong> on GitHub</li>
+<li><p><strong>Clone your fork</strong> locally</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">git clone https://github.com/YOUR_USERNAME/UpPing.git
+cd UpPing</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p><strong>Create a feature branch</strong></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">git checkout -b feature/your-feature-name</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p><strong>Install dependencies</strong></p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash"># Frontend
+cd frontend &amp;&amp; npm install
+
+# API
+cd ../api &amp;&amp; npm install</code></pre>
+</doc-codeblock></div>
+</li>
+<li><strong>Make your changes</strong> and test thoroughly</li>
+<li><strong>Submit a pull request</strong> with clear description</li>
+</ol>
+<doc-anchor-target id="code-of-conduct">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#code-of-conduct">#</doc-anchor-trigger>
+        <span>Code of Conduct</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Be respectful and inclusive</li>
+<li>Provide constructive feedback</li>
+<li>Focus on the code, not the person</li>
+<li>Help others learn and grow</li>
+</ul>
+<hr>
+<doc-anchor-target id="support--contact">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#support--contact">#</doc-anchor-trigger>
+        <span>Support &amp; Contact</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="get-help">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#get-help">#</doc-anchor-trigger>
+        <span>Get Help</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Email</strong>: <a href="mailto:mail@vxrachit.is-a.dev">mail@vxrachit.is-a.dev</a></li>
+<li><strong>Issues</strong>: <a href="https://github.com/vxrachit/UpPing/issues">GitHub Issues</a></li>
+</ul>
+<doc-anchor-target id="links">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#links">#</doc-anchor-trigger>
+        <span>Links</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Live Demo</strong>: <a href="https://upping.vxrachit.is-a.dev">https://upping.vxrachit.is-a.dev</a></li>
+<li><strong>Repository</strong>: <a href="https://github.com/vxrachit/UpPing">https://github.com/vxrachit/UpPing</a></li>
+</ul>
+<hr>
+<doc-anchor-target id="changelog">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#changelog">#</doc-anchor-trigger>
+        <span>Changelog</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="version-100-current">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#version-100-current">#</doc-anchor-trigger>
+        <span>Version 1.0.0 (Current)</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><span class="docs-emoji">&#x2728;</span> Initial release</li>
+<li><span class="docs-emoji">&#x2705;</span> Real-time website monitoring</li>
+<li><span class="docs-emoji">&#x2705;</span> Performance metrics (Response Time, TTFB)</li>
+<li><span class="docs-emoji">&#x2705;</span> SSL validation</li>
+<li><span class="docs-emoji">&#x2705;</span> Health scoring algorithm</li>
+<li><span class="docs-emoji">&#x2705;</span> Redirect chain tracking</li>
+<li><span class="docs-emoji">&#x2705;</span> Recent checks history</li>
+<li><span class="docs-emoji">&#x2705;</span> Cloudflare Workers API</li>
+<li><span class="docs-emoji">&#x2705;</span> Comprehensive error handling</li>
+</ul>
+<hr>
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/vxrachit">vxRachit</a>
+</p>
+<p align="center">
+  <a href="https://upping.vxrachit.is-a.dev/">🌐 Live Demo</a> •
+  <a href="https://github.com/vxrachit/UpPing/issues">🐛 Report Bug</a> •
+</p>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer id="retype-content-footer" class="clear-both">
+                            
+                                <nav id="retype-nextprev" class="print:hidden flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../resume-flow/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-base-text-muted">Previous</span>
+                                                <span class="block mt-1">Resume​Flow</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div id="retype-page-footer" class="print:border-none border-t border-base-border pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between print:justify-center">
+                                <div id="retype-footer-links" class="print:hidden">
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                        <li>
+                                            <a class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-footer-link hover:text-footer-link-hover md:mb-0" href="https://github.com/vxrachit">GitHub</a>
+                                        </li>
+                                        <li>
+                                            <a class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-footer-link hover:text-footer-link-hover md:mb-0" href="https://linkedin.com/in/vxrachit">LinkedIn</a>
+                                        </li>
+                                        <li>
+                                            <a class="block mr-4 py-2 text-sm whitespace-nowrap transition-colors duration-200 ease-linear text-footer-link hover:text-footer-link-hover md:mb-0" href="https://vxrachit.dpdns.org">Portfolio</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© 2025 vxRachit. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="retype-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "UpPing", level: 1, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>
